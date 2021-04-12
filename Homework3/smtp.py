@@ -36,8 +36,8 @@ if recv[:3] != '220':
 clientSocket = ssl.wrap_socket(clientSocket)
 
 # Info for username and password
-email = (base64.b64encode('h.mashawn2@gmail.com'.encode())+('\r\n').encode())
-password = (base64.b64encode('Cannucks2333!'.encode())+('\r\n').encode())
+email = (base64.b64encode('<insert gmail>'.encode())+('\r\n').encode())
+password = (base64.b64encode('<insert password>'.encode())+('\r\n').encode())
 clientSocket.send('AUTH LOGIN \r\n'.encode())
 recv_auth = clientSocket.recv(1024).decode()
 print(recv_auth)
